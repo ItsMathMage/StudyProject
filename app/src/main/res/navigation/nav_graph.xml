@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.utm.stadydatabase.fragments.startfragment.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.utm.stadydatabase.fragments.addfragment.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_addFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="com.utm.stadydatabase.fragments.detailsfragment.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <action
+            android:id="@+id/action_detailsFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
+</navigation>

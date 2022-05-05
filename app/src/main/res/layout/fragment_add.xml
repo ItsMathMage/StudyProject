@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.addfragment.AddFragment"
+    tools:ignore="MissingConstraints">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20sp"
+        android:text="@string/input_details_of_food"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="175sp"
+        android:layout_height="175sp"
+        android:src="@drawable/ic_baseline_fastfood_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/details_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+
+        android:hint="@string/food_name"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:layout_editor_absoluteX="20dp" />
+
+    <EditText
+        android:id="@+id/details_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="@string/food_category"
+        app:layout_constraintTop_toBottomOf="@+id/details_name" />
+
+    <EditText
+        android:id="@+id/details_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="@string/food_price"
+        app:layout_constraintTop_toBottomOf="@+id/details_category" />
+
+    <EditText
+        android:id="@+id/details_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="@string/food_weight"
+        app:layout_constraintTop_toBottomOf="@+id/details_price" />
+
+    <EditText
+        android:id="@+id/details_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="@string/food_amount"
+        app:layout_constraintTop_toBottomOf="@+id/details_weight" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_back_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:layout_margin="15sp"
+        android:contentDescription="@string/back" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_add_food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/ic_baseline_add_24"
+        android:layout_margin="15sp"
+        android:contentDescription="@string/add" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
